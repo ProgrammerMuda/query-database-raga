@@ -1,0 +1,41 @@
+import java.io.*;
+class test50
+{
+
+     public static void main(String[] args) {
+        try{
+String nDepan;
+
+BufferedReader in = new
+BufferedReader(new InputStreamReader(System.in));
+System.out.print("Nama Depan : ");
+String nNamaDepan = in.readLine();
+System.out.print("Nama belakang : ");
+String nNamaBelakang = in.readLine(); 
+System.out.print("Alamat : ");
+String nAlamat = in.readLine();
+System.out.print("hoby : ");
+String nhoby = in.readLine();
+System.out.print("cita-cita : ");
+String ncitacita = in.readLine();
+System.out.print("target setelah lulus : ");
+String ntargetstelahlulus = in.readLine(); 
+
+
+System.out.println("------------------------");
+System.out.println("        Biodataku       ");
+System.out.println("------------------------");
+System.out.println("Nama lengkap: " +nNamaDepan+" "+ nNamaBelakang );
+System.out.println("Alamat :" +nAlamat);        
+System.out.println("hoby :" +nhoby);
+System.out.println("cita-cita :" +ncitacita);
+System.out.println("target setelah lulus :" +ntargetstelahlulus );
+
+}
+catch(Exception e){
+    
+
+System.out.println(e);
+}
+    }
+}
