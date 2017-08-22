@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Baru {
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        System.out.println("Inputkan nilai Anda : ");
+        int nilai = s.nextInt();
+		if (nilai>90){
+		  System.out.println("Grade kamu A!");
+		}
+        else if (nilai>85){
+            System.out.println("Grade kamu B!");
+        }
+        else if(nilai>75){
+            System.out.println("Grade kamu C!");
+        }
+        else if(nilai>60){
+            System.out.println("Grade kamu D!");
+        }
+        else if(nilai<=60){
+            System.out.println("Remedial ya!");
+        }
+    }
+}
