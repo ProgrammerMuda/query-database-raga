@@ -1,0 +1,17 @@
+1.	Create database product1
+2.	Create table product (idproduct int(10), productcode char(3),  name varchar(30), quantity int(10), price decimal(7,0))
+3.	Create table product_details (idproduct int(10), comment text))
+4.	Create table product_supplier (idproduct int(10), idsupplier in(10 ))
+5.	Create table product (idproduct int(10), idsupplier in(10 ) ,  name varchar(30), phone int(12))
+6.	Alter table products_details add constraint pk_product PRIMARY KEY (idproduct)
+7.	Alter table product add constraint pk_product PRIMARY KEY (idproduct)
+8.	Alter table product_supplier add constraint pk_productsupplier PRIMARY KEY (idproduct, idsupplier)
+9.	Alter table supplier add constraint pk_supplier PRIMARY KEY ( idsupplier)
+10. Insert into pruduct values(‘2323’,’123’,’sabun lifeboy’,’1’,’6000’)
+11. Insert into pruduct_details(‘2323’,’good’)
+12. Insert into pruduct_supplier(‘2323’,’3434’)
+13. Insert into pruduct_supplier(’3434’,’raga’,’088212879728’)
+14. alter table produck add constraint FK_produck  FOREIGN KEY (idproduct) references product_details (idproduct)
+15. alter table produck add constraint FK_produck  FOREIGN KEY (idproduct) references product_supplier (idproduct)
+16. alter table product_supplier add constraint FK_supplier2 FOREIGN KEY (idsupplier) references supplier (idsupplier)
+
