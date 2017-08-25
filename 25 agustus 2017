@@ -1,0 +1,12 @@
+CREATE database guru
+create TABLE tbl_guru(id_guru varchar(20)NOT null, nama_guru varchar(30), tanggallahir varchar(15), kontak int(12), alamat_tinggal varchar(50))
+ALTER table tbl_guru add CONSTRAINT pk_guru PRIMARY KEY (id_guru)
+insert into tbl_guru values ('1234','raga murtadha','20030118','088212879728','bekasi timur')
+insert into tbl_guru values ('12345',' ust daniel martin','23-04-1987','088212873456','bekasi barat')
+insert into tbl_guru values ('123456','ust ahamad baydhewi','19-06-1978','083897735233','cikarang timur')
+insert into tbl_guru values ('1234567','ust anum','19-06-1979','083897756656','cikarang barat')
+insert into tbl_guru values ('12345678','ust asep','16-06-1979','083893525436','cikarang timur')
+select * from tbl_guru WHERE alamat_tinggal LIKE '%timur'
+select * from tbl_guru WHERE nama_guru LIKE 'ust%'
+select * from tbl_guru WHERE tanggallahir LIKE '%19-06%'
+SELECT*from tbl_guru WHERE nama_guru NOT LIKE '%ust%'
